@@ -1,7 +1,7 @@
 {
-  "name": "pedidos",
+  "name": "mascotas",
   "version": "0.0.1",
-  "description": "Introduccion a Loopback",
+  "description": "Entrega final ciclo 4",
   "keywords": [
     "loopback-application",
     "loopback"
@@ -9,7 +9,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {
-    "node": ">=10.16"
+    "node": "14 || 16 || 17 || 18"
   },
   "scripts": {
     "build": "lb-tsc",
@@ -25,8 +25,8 @@
     "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
-    "docker:build": "docker build -t pedidos .",
-    "docker:run": "docker run -p 3000:3000 -d pedidos",
+    "docker:build": "docker build -t mascotas .",
+    "docker:run": "docker run -p 3000:3000 -d mascotas",
     "premigrate": "npm run build",
     "migrate": "node ./dist/migrate",
     "preopenapi-spec": "npm run build",
@@ -40,7 +40,7 @@
     "type": "git",
     "url": ""
   },
-  "author": "Luis Correa <luiscorrea250901@gmail.com>",
+  "author": " <epfelipe12@gmail.com>",
   "license": "",
   "files": [
     "README.md",
@@ -49,23 +49,26 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^3.4.4",
-    "@loopback/cli": "^4.1.4",
-    "@loopback/core": "^2.18.0",
-    "@loopback/repository": "^3.7.3",
-    "@loopback/rest": "^10.1.0",
-    "@loopback/rest-explorer": "^3.3.4",
-    "@loopback/service-proxy": "^3.2.4",
+    "@loopback/boot": "^5.0.4",
+    "@loopback/core": "^4.0.4",
+    "@loopback/repository": "^5.0.4",
+    "@loopback/rest": "^12.0.4",
+    "@loopback/rest-explorer": "^5.0.4",
+    "@loopback/service-proxy": "^5.0.4",
+    "@types/node-fetch": "^2.6.2",
+    "crypto-js": "^4.1.1",
     "loopback-connector-mongodb": "^5.6.0",
+    "node-fetch": "^2.6.5",
+    "password-generator": "^2.3.2",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@loopback/build": "^7.0.2",
-    "@loopback/eslint-config": "^11.0.2",
-    "@loopback/testlab": "^3.4.4",
-    "@types/node": "^10.17.60",
-    "eslint": "^7.32.0",
-    "source-map-support": "^0.5.20",
-    "typescript": "~4.4.4"
+    "@loopback/build": "^9.0.4",
+    "@loopback/eslint-config": "^13.0.4",
+    "@loopback/testlab": "^5.0.4",
+    "@types/node": "^14.18.32",
+    "eslint": "^8.25.0",
+    "source-map-support": "^0.5.21",
+    "typescript": "~4.8.4"
   }
 }
