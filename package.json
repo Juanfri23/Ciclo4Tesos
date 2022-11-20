@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@loopback/cli": "^1.25.1",
+    "@loopback/core": "^4.0.4",
     "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
